@@ -10,9 +10,9 @@
     }
 
 	//take all parameters through get method
-	$id = test_input($_GET['id']);
+	$nim = test_input($_GET['nim']);
 	//delete data from database based on nim
-	$query = mysqli_query($connect, "delete from mahasiswa where id='$id'") or die(mysqli_error($connect));
+	$query = mysqli_query($connect, "delete from mahasiswa where nim='$nim'") or die(mysqli_error($connect));
 
 	if ($query) {
 		

@@ -45,7 +45,7 @@
 		$nomor = 1;
 		while($data = mysqli_fetch_array($query_mysql)){
 		?>
-		
+
 		<tr>
 			<td><?php echo $nomor++; ?></td>
 			<td><?php echo $data['nim']; ?></td>
@@ -55,7 +55,7 @@
 			<td><?php echo $data['nomor_telp']; ?></td>
 			<td>
 				<a href="mahasiswaubah.php?nim=<?php echo $data['nim']; ?>">Edit</a> |
-				<a href="mahasiswahapus.php?id=<?php echo $data['id']; ?>">Hapus</a>					
+				<a href="mahasiswahapus.php?nim=<?php echo $data['nim']; ?>">Hapus</a>					
 			</td>
 		</tr>
 		<?php } ?>
