@@ -27,6 +27,6 @@ header('location:mahasiswa.php');
 } 
 
 else {
-  echo "<script>alert('Data yang Anda masukkan ada yang salah');history.go(-1);</script>";
+  echo "<script>alert('NIM yang Anda masukkan sudah terdaftar');history.go(-1);</script>";
 }
 ?>

@@ -18,42 +18,62 @@
 
 </head>
 <body>
-<div class="container">
-        <h2 class="title"><center>Ubah Data Mahasiswa</h2></br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h1><center>- Ubah Data Mahasiswa -</h1>  
+		</div>
+    </div>
+
+
         <form class="form-horizontal" action="mahasiswaubahaction.php" method="post" role="form">
 
     <div class="form-group">
-        <label class="col-sm-3 control-label">NIM</label>
-            <div class="col-sm-6">
-                 <input type="text" class="form-control" name='nim' value="<?php echo $row['nim']; ?>" required ></textarea>
+    <center>NIM</center>
+            <div class="col-sm-6" align="center">
+                 <input type="text" class="form-control" name='nim' value="<?php echo $row['nim']; ?>" readonly ></textarea>
             </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label">Nama</label>
-            <div class="col-sm-6">
+    <center>Nama</center>
+            <div class="col-sm-6" align="center">
                  <input type="text" class="form-control" name='nama' value="<?php echo $row['nama']; ?>" required ></textarea>
             </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label">Alamat</label>
-            <div class="col-sm-6">
+    <center>Alamat</center>
+            <div class="col-sm-6" align="center">
                  <input type="text" class="form-control" name='alamat' value="<?php echo $row['alamat']; ?>" required ></textarea>
             </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label">Kota</label>
-            <div class="col-sm-6">
+    <center>Kota</center>
+            <div class="col-sm-6" align="center">
                  <input type="text" class="form-control" name='kota' value="<?php echo $row['kota']; ?>" required ></textarea>
             </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label">Nomor Telepon</label>
-            <div class="col-sm-6">
+    <center>Nomor Telepon</center>
+            <div class="col-sm-6" align="center">
                  <input type="text" class="form-control" name='nomor_telp' value="<?php echo $row['nomor_telp']; ?>" required ></textarea>
             </div>
     </div>
 
-    <a href="mahasiswa.php>"onClick="return confirm('Apakah Anda yakin ingin mengubah data ini?')"><button type='submit' name='submit' class='btn btn-primary btn-sm'>Simpan</button></a>
+    <br>
 
+    <div class="row">
+        <div class="col-sm-10" align="center">
+            <a href="mahasiswa.php>"onClick="return confirm('Apakah Anda yakin ingin mengubah data ini?')"><button type='submit' name='submit' class='btn btn-primary btn-sm'>Simpan</button></a>
+            </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-10" align="center">
+        <input type="button" value="Kembali" onclick="history.back()">
+        </div>
+    </div>
 </body>
 </html>
